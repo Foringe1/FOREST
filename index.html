@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Forest</title>
+    <meta charset="utf-8">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/3575/3575006.png">
+    <link rel="stylesheet" href="supersite.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav-one">
+        <div id="current_date_time_block">
+        <script type="text/javascript">
+
+            /* функция добавления ведущих нулей */
+            /* (если число меньше десяти, перед числом добавляем ноль) */
+            function zero_first_format(value)
+            {
+                if (value < 10)
+                {
+                    value='0'+value;
+                }
+                return value;
+            }
+        
+            /* функция получения текущей даты и времени */
+            function date_time()
+            {
+                var current_datetime = new Date();
+                var day = zero_first_format(current_datetime.getDate());
+                var month = zero_first_format(current_datetime.getMonth()+1);
+                var year = current_datetime.getFullYear();
+                var hours = zero_first_format(current_datetime.getHours());
+                var minutes = zero_first_format(current_datetime.getMinutes());
+                var seconds = zero_first_format(current_datetime.getSeconds());
+        
+                return day+"."+month+"."+year;
+            }
+        
+            /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+            document.getElementById('current_date_time_block').innerHTML = date_time();
+        </script>
+        </div>
+
+        <div class="nav-one-list">
+          <a href="#">Поддержка</a>
+          <a href="#">Настройки</a>
+          <a href="#">Наше Сообщество</a>
+        </div>
+      </div>
+      <div class="header">
+        <div class="nav-two">
+          <div class="logo">
+            <img src="https://static.tildacdn.com/tild6331-6636-4866-b665-326363646534/d04096987885ce824643.png" alt="Не удалось загрузить изображение" width="95">
+          </div>
+          <div class="nav-two-list">
+            <div class="home">
+              <a href="#" class="home">HOME</a>
+            </div>
+            <a href="#">ABOUT</a>
+            <a href="#">PRODUCTS</a>
+            <a href="#">SERVICES</a>
+            <a href="#">FAQS</a>
+            <a href="#">CONTACTS</a>
+          </div>
+        </div>
+        <div class="header-content">
+          <h2>FRESH IDEAS</h2>
+          <p>FOR GROWING YOUR BUSINES</p>
+          <div class="header-btn">
+            <a href="#" class="more">READ MORE</a>
+            <a href="#" class="register">REGISTER</a>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main-container">
+          <div class="info_1">
+            <h2> Research.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis cumque neque minus amet tenetur cupiditate maiores et eligendi molestias. Ipsa libero dolorem eum minus nisi natus ullam et ratione!</p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="info_2">
+            <h2>Planning.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis cumque neque minus amet tenetur cupiditate maiores et eligendi molestias. Ipsa libero dolorem eum minus nisi natus ullam et ratione!</p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="info_3">
+            <h2>Support.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis cumque neque minus amet tenetur cupiditate maiores et eligendi molestias. Ipsa libero dolorem eum minus nisi natus ullam et ratione!</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="main-container_2">
+          <div class="info_1">
+            <h2>Work team.</h2>
+            <p>
+              <span style="color: rgb(255, 255, 255);">Lorem ipsum dolor </span> sit amet consectetur <br> adipisicing elit. Assumenda obcaecati sapiente <br> ratione debitis ipsam esse. 
+            </p> 
+            <p>
+              <span style="color: rgb(255, 255, 255);"> Lorem ipsum dolor </span> sit amet consectetur, <br> adipisicing elit. Minima, odio!
+            </p>
+            <p>
+              <span style="color: rgb(255, 255, 255);"> Lorem ipsum dolor </span> sit amet consectetur <br> adipisicing elit. Nobis facilis at nisi!
+            </p>
+          </div>
+          <div class="info_2">
+            <h2>Services.</h2>
+            <ul>
+              <a href="#"> <li>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</li> </a>
+              <a href="#"> <li>Lorem ipsum dolor sit. Lorem, ipsum dolor.</li> </a>
+              <a href="#"> <li>Lorem, ipsum dolor. Lorem, ipsum dolor.</li> </a>
+              <a href="#"> <li>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</li> </a>
+              <a href="#"> <li>Lorem ipsum dolor sit. Lorem, ipsum dolor.</li> </a>
+            </ul>
+            <a href="#">READ MORE</a>
+          </div>
+          <div class="info_3">
+            <h2>Contact.</h2>
+            <div class="input_1">
+              <input type="text" placeholder="YOUR NAME">
+            </div>
+            <div class="input_2">
+              <input type="text" placeholder="YOUR EMAIL">
+            </div>
+            <div class="input_3">
+              <input type="text" placeholder="MESSAGE">
+            </div>
+            <button class="btn2">CLEAR</button>
+            <button class="btn1">SEND</button>
+        </div>
+
+      </div>
+      <footer>
+        <div class="footer-container">
+          
+          <div class="list_1">
+            <h3> <u> COMPANY </u> </h3>
+            <ul>
+              <li> ABOUT US </li>
+            </ul>
+            <ul>
+              <li> SERVICES</li>
+            </ul>
+            <ul>
+              <li> WORK TEAM </li>
+            </ul>
+            <ul>
+              <li> CLIENTS </li>
+            </ul>
+          </div>
+          <div class="list_2">
+          <h3> <u> SERVICES </u> </h3>
+          <ul>
+            <li> PRACTICE </li>
+          </ul>
+          <ul>
+            <li> TRAINING  </li>
+          </ul>
+          <ul>
+            <li>  RESEARCHES </li>
+          </ul>
+          </div>
+          <div class="list_3">
+          <h3> <u> ADVICE </u> </h3>
+          <ul>
+            <li>FAQS </li>
+          </ul>
+          <ul>
+            <li> SOLUTIONS </li>
+          </ul>
+          </div>
+          <div class="list_4">
+            <p style="float: right;">Foringe</p>
+          <h3> <u> MEMBERS </u> </h3>
+          <ul>
+            <li> SIGNUP</li>
+          </ul>
+          <ul>
+            <li> FORUM </li>
+          </ul>
+          <ul>
+            <li> PROMOTIONS </li>
+          </ul>
+        </div>
+        
+        </div>
+
+
+      </footer>
+    </div>
+  </div>
+
+  </body>
+
+</html>
